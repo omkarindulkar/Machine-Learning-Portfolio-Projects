@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Flask App for Most Trending Hashtag</title>
+</head>
+<body>
+<h1>Twitter Flask App for Most Trending Hashtag</h1>
+<h3>Most Trending Hashtag: {{ hashtag }}<h3></h3>
+
+<img src="data:image/png;base64, {{ data }}">
+
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+</body>
+</html>
